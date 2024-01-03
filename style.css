@@ -2,8 +2,12 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  margin: 20px;
+}
+
 .guess-item {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .modal-container {
@@ -69,15 +73,42 @@
   height: 40px;
 }
 
+.guess-list {
+  padding-left: 15px;
+}
+
 .guess-list-container {
+  font-size: 14px;
   min-height: 400px;
-  width: 250px;
+  width: 150px;
   border: 1px solid black;
-  padding: 0 20px;
+  padding: 0 15px;
   border-radius: 8px;
 }
 
 .game-container {
   display: flex;
   justify-content: space-around;
+}
+
+@media (max-width: 1100px) {
+  .dropdown-container {
+    flex-direction: column;
+  }
+  .game-container {
+    align-items: flex-start;
+  }
+  .dropdown,
+  .guess-button {
+    margin: 10px;
+  }
+  .dropdown:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .game-container {
+    justify-content: space-between;
+  }
 }
