@@ -1,17 +1,21 @@
 const guessList = document.querySelector('.guess-list');
-
 const guessOne = document.querySelector('#guess-dropdown-one');
 const guessTwo = document.querySelector('#guess-dropdown-two');
 const guessThree = document.querySelector('#guess-dropdown-three');
 const guessFour = document.querySelector('#guess-dropdown-four');
 const guessFive = document.querySelector('#guess-dropdown-five');
 const guessButton = document.querySelector('.guess-button');
-
 const modalContainer = document.querySelector('.modal-container');
+const modal = document.querySelector('.modal');
 const playAgainBtn = document.querySelector('.play-again-btn');
+const winMessage = document.querySelector('.win-message');
 
 playAgainBtn.addEventListener('click', () => {
   modalContainer.classList.add('hidden');
+  guessList.textContent = '';
+  allGuesses = [];
+  sequence = generateSequence();
+  winMessage.innerHTML = '';
 });
 
 const colors = [
@@ -95,8 +99,6 @@ guessButton.addEventListener('click', () => {
 const checkIfWin = (result) => {
   if (result.every((item) => item === 'yes')) {
     modalContainer.classList.remove('hidden');
-    guessList.textContent = '';
-    sequence = generateSequence();
-    allGuesses = [];
+    winMessage.innerHTML = `<p style="text-align: center; margin-top: 0">It took you ${allGuesses.length} turns to complete the challenge.</p>`;
   }
 };

@@ -7,80 +7,86 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ol class="guess-list"></ol>
-    <div class="dropdown-container">
-      <select class="dropdown" name="guess-dropdown-one" id="guess-dropdown-one">
-        <option value="red">red</option>
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="white">white</option>
-        <option value="black">black</option>
-        <option value="orange">orange</option>
-        <option value="brown">brown</option>
-        <option value="purple">purple</option>
-        <option value="aqua">aqua</option>
-        <option value="yellow">yellow</option>
-      </select>
+    <div class="game-container">
+      <div class="dropdown-container">
+        <select class="dropdown" name="guess-dropdown-one" id="guess-dropdown-one">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="orange">orange</option>
+          <option value="brown">brown</option>
+          <option value="purple">purple</option>
+          <option value="aqua">aqua</option>
+          <option value="yellow">yellow</option>
+        </select>
 
-      <select class="dropdown" name="guess-dropdown-two" id="guess-dropdown-two">
-        <option value="red">red</option>
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="white">white</option>
-        <option value="black">black</option>
-        <option value="orange">orange</option>
-        <option value="brown">brown</option>
-        <option value="purple">purple</option>
-        <option value="aqua">aqua</option>
-        <option value="yellow">yellow</option>
-      </select>
+        <select class="dropdown" name="guess-dropdown-two" id="guess-dropdown-two">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="orange">orange</option>
+          <option value="brown">brown</option>
+          <option value="purple">purple</option>
+          <option value="aqua">aqua</option>
+          <option value="yellow">yellow</option>
+        </select>
 
-      <select class="dropdown" name="guess-dropdown-three" id="guess-dropdown-three">
-        <option value="red">red</option>
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="white">white</option>
-        <option value="black">black</option>
-        <option value="orange">orange</option>
-        <option value="brown">brown</option>
-        <option value="purple">purple</option>
-        <option value="aqua">aqua</option>
-        <option value="yellow">yellow</option>
-      </select>
+        <select class="dropdown" name="guess-dropdown-three" id="guess-dropdown-three">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="orange">orange</option>
+          <option value="brown">brown</option>
+          <option value="purple">purple</option>
+          <option value="aqua">aqua</option>
+          <option value="yellow">yellow</option>
+        </select>
 
-      <select class="dropdown" name="guess-dropdown-four" id="guess-dropdown-four">
-        <option value="red">red</option>
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="white">white</option>
-        <option value="black">black</option>
-        <option value="orange">orange</option>
-        <option value="brown">brown</option>
-        <option value="purple">purple</option>
-        <option value="aqua">aqua</option>
-        <option value="yellow">yellow</option>
-      </select>
+        <select class="dropdown" name="guess-dropdown-four" id="guess-dropdown-four">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="orange">orange</option>
+          <option value="brown">brown</option>
+          <option value="purple">purple</option>
+          <option value="aqua">aqua</option>
+          <option value="yellow">yellow</option>
+        </select>
 
-      <select class="dropdown" name="guess-dropdown-five" id="guess-dropdown-five">
-        <option value="red">red</option>
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="white">white</option>
-        <option value="black">black</option>
-        <option value="orange">orange</option>
-        <option value="brown">brown</option>
-        <option value="purple">purple</option>
-        <option value="aqua">aqua</option>
-        <option value="yellow">yellow</option>
-      </select>
+        <select class="dropdown" name="guess-dropdown-five" id="guess-dropdown-five">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="orange">orange</option>
+          <option value="brown">brown</option>
+          <option value="purple">purple</option>
+          <option value="aqua">aqua</option>
+          <option value="yellow">yellow</option>
+        </select>
 
-      <button class="guess-button">guess</button>
+        <button class="guess-button">guess</button>
+      </div>
+      <div class="guess-list-container">
+        <p>You answers:</p>
+        <ol class="guess-list"></ol>
+      </div>
     </div>
 
     <div class="modal-container hidden">
       <div class="modal">
         <span>Congratulations!</span>
         <p>You won!!!</p>
+        <div class="win-message"></div>
         <button class="play-again-btn">Play again</button>
       </div>
     </div>
