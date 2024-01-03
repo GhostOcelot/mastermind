@@ -78,9 +78,9 @@ body {
 }
 
 .guess-list-container {
-  font-size: 14px;
+  font-size: 12px;
   min-height: 400px;
-  width: 150px;
+  width: 170px;
   border: 1px solid black;
   padding: 0 15px;
   border-radius: 8px;
