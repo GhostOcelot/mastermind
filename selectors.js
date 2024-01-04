@@ -1,0 +1,10 @@
+export const guessList = document.querySelector('.guess-list');
+export const guessOne = document.querySelector('#guess-dropdown-one');
+export const guessTwo = document.querySelector('#guess-dropdown-two');
+export const guessThree = document.querySelector('#guess-dropdown-three');
+export const guessFour = document.querySelector('#guess-dropdown-four');
+export const guessFive = document.querySelector('#guess-dropdown-five');
+export const guessButton = document.querySelector('.guess-button');
+export const modalContainer = document.querySelector('.modal-container');
+export const playAgainBtn = document.querySelector('.play-again-btn');
+export const winMessage = document.querySelector('.win-message');
